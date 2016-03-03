@@ -54,5 +54,10 @@ public class PlayerController : MonoBehaviour {
 		if (this._newPosition.x > this.boundary.xMax) {
 			this._newPosition.x = this.boundary.xMax;
 		}
+
+        if (this._newPosition.y < this.boundary.yMin)
+        {
+            this._newPosition.y = this.boundary.yMin;
+        }
 	}
 }
